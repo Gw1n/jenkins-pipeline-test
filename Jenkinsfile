@@ -1,9 +1,9 @@
 pipeline {
     
-    agent any
+    agent {label 'docker'}
 
     triggers {
-        pollSCM('H/5 * * * *')
+        pollSCM('H/1 * * * *')
     }
 
     stages {
