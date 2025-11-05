@@ -17,7 +17,7 @@ pipeline {
         stage('Run SQL Query') {
             steps {
                 echo "Запуск скрипта: query.sql"
-                sh 'mysql -h mysql-rfam-public.ebi.ac.uk -P 4412 -u rfamro -D Rfam < ./query.sql'
+                sh 'mysql -h mysql-rfam-public.ebi.ac.uk -P 4497 -u rfamro -D Rfam < ./query.sql'
             }
         }
     }
