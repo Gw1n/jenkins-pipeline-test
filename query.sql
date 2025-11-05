@@ -1,4 +1,4 @@
 SELECT rfam_acc, description, author
 FROM family
 ORDER BY RAND()
-LIMIT 7;
+LIMIT 6;
